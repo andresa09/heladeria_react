@@ -9,9 +9,9 @@ function App() {
 
   const handleVentas = () => {
     if (ventas <= 0 && cambio == 10) {
-      alert("no puedes bola e cacho")
+      alert("Retorno : N ")
     } else if (ventas <= 0 && cambio == 20 || valorTotal < 15 && cambio == 20) {
-      alert("no puedes bola e cacho")
+      alert("Retorno : N ")
     }
     else {
       setVentas(ventas + 1)
@@ -20,11 +20,6 @@ function App() {
     }
 
   }
-
-  useEffect(() => {
-    console.log(cambio)
-
-  }, [cambio])
 
 
 
